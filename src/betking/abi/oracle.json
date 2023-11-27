@@ -1,0 +1,188 @@
+[
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "gameID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "string",
+				"name": "_homeTeam",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_awayTeam",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_gameDate",
+				"type": "uint256"
+			}
+		],
+		"name": "createMatch",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "gameIDList",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "gameID",
+				"type": "uint256"
+			}
+		],
+		"name": "getHomeTieStatus",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "gameID",
+				"type": "uint256"
+			}
+		],
+		"name": "getHomeWinStatus",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "gameID",
+				"type": "uint256"
+			}
+		],
+		"name": "getPlayedStatus",
+		"outputs": [
+			{
+				"internalType": "bool",
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "matchData",
+		"outputs": [
+			{
+				"internalType": "string",
+				"name": "homeTeam",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "awayTeam",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "homeScore",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "awayScore",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "gameDate",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "played",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "homeWin",
+				"type": "bool"
+			},
+			{
+				"internalType": "bool",
+				"name": "tie",
+				"type": "bool"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "uint256",
+				"name": "gameID",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_homeScore",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_awayScore",
+				"type": "uint256"
+			},
+			{
+				"internalType": "bool",
+				"name": "_played",
+				"type": "bool"
+			}
+		],
+		"name": "updateBet",
+		"outputs": [],
+		"stateMutability": "nonpayable",
+		"type": "function"
+	}
+]

@@ -12,3 +12,10 @@ body{
 .heading{
   text-align: center;
 }
+
+li{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-left: -38px;
+}
