@@ -1,5 +1,5 @@
 import { ethers } from 'ethers';
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useWalletClient } from 'wagmi';
 
 const useProvider = () => {
