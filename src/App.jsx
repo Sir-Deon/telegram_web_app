@@ -18,10 +18,6 @@ function App() {
 
   useEffect(() => {
     tele.ready();
-   
-  }, [tele]);
-
-  useEffect(() => {
     matchData().then((data) => {
       setData({
         home: data[0],
@@ -35,7 +31,9 @@ function App() {
           tie: +data[2]._hex
         })
     })
-  }, [matchData]);
+  });
+
+
 
   // const onCheckout = () => {
   //   tele.MainButton.text = "Pay :)";
@@ -222,15 +220,15 @@ function App() {
         <ul className="detail">
           <li>
             <p>Home Win</p>
-            <p>{details?.home.toLocaleString('en-US', {minimumFractionDigits: 2})}</p>
+            <p>{details?.home?.toLocaleString('en-US', {minimumFractionDigits: 2})}</p>
           </li>
           <li>
             <p>Tie</p>
-            <p>{details?.tie.toLocaleString('en-US', {minimumFractionDigits: 2})}</p>
+            <p>{details?.tie?.toLocaleString('en-US', {minimumFractionDigits: 2})}</p>
           </li>
           <li>
             <p>Away Win</p>
-            <p>{details?.away.toLocaleString('en-US', {minimumFractionDigits: 2})}</p>
+            <p>{details?.away?.toLocaleString('en-US', {minimumFractionDigits: 2})}</p>
           </li>
         </ul>
       </div>
