@@ -9,7 +9,7 @@ import { createWeb3Modal, defaultWagmiConfig } from "@web3modal/wagmi/react";
 const chains = [avalancheFuji];
 
 // 1. Get projectId
-const projectId = "8a7193d214047981ef8a61048c0538c6";
+const projectId = "c792ef48edbfaf811f519b5c2cee421a";
 
 // 2. Create wagmiConfig
 const metadata = {
