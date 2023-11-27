@@ -13,8 +13,8 @@ const projectId = "c792ef48edbfaf811f519b5c2cee421a";
 
 // 2. Create wagmiConfig
 const metadata = {
-  name: "BetKing",
-  description: "Betking",
+  name: "bBetter",
+  description: "bBetter",
   url: "https://isfoody.netlify.app",
   icons: [],
 };
